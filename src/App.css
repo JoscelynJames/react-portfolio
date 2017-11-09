@@ -1,0 +1,47 @@
+.nav-container {
+	width: auto;
+	height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 1%;
+}
+
+.svg-button {
+  width: 90px;
+  position: absolute;
+}
+
+a {
+  padding-left: 2%;
+}
+
+.img-container {
+  display: flex;
+}
+
+.splash-img {
+  height: 500px;
+  padding-top: 100px;
+}
+
+.splash-name {
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 300;
+
+}
+
+.splash-container {
+  font-family: proxima-soft, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.splash-word {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
