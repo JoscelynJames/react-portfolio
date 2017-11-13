@@ -2,6 +2,7 @@ import React from 'react';
 import Anime from 'react-anime';
 // import miles from '../assets/miles.svg';
 import Miles from '../assets/Miles';
+// import anime from 'animejs'
 
 class SplashPage extends React.Component {
 
@@ -18,10 +19,10 @@ class SplashPage extends React.Component {
 				</div>
 				<div className="splash-word">
 					<div className="splash-name">
-						<p>Joscelyn James</p>
+						<div>Joscelyn James</div>
 					</div>
-					<div>
-						<p>Full Stack Developer</p>
+					<div className="splash-job">
+						<div>Full Stack Developer</div>
 					</div>
 				</div>
 			</div>
