@@ -2,18 +2,24 @@ import React, { Component } from 'react';
 import './css/app.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import SplashPage from './components/SplashPage';
+import MainPage from './components/MainPage';
+import AboutMe from './components/AboutMe';
 import SideNav from './components/SideNav';
+import Projects from './components/Projects';
 
 class App extends Component {
   render() {
     return <div className="App">
-        <BrowserRouter>
+      <SideNav />
+        {/* <BrowserRouter>
           <Switch>
-            <Route path="/" exact component={SplashPage} />
-            <Route path="/about" component={SideNav} />
+            <Route path="/" exact component={MainPage} />
+            <Route path="/about" component={AboutMe} />
           </Switch>
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <MainPage />
+        <Projects />
+        <AboutMe />
       </div>;
   }
 }

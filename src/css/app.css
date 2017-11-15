@@ -1,13 +1,14 @@
 .nav-container {
   width: auto;
-  height: 80vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  padding-left: 1%; }
+  z-index: 1;
+}
 
 .svg-button {
   width: 90px;
+  height: 10%;
   position: absolute; }
 
 a {
@@ -17,34 +18,53 @@ a {
   display: flex;
   flex-wrap: wrap; }
 
-.splash-img {
-  height: 500px;
-  max-width: 100%;
-  max-height: 100%;
-  padding-top: 5%; }
-
-.splash-name {
-align-self: center;  font-size: 2.5rem;
-  font-weight: 500;
-  color: #F9BA00;
-  padding-left: 2%; }
-
-.splash-container {
+.main-container {
   font-family: proxima-soft, sans-serif;
   font-style: italic;
   font-weight: 200;
-  font-size: 1.5rem;
   display: flex;
-  flex-wrap: wrap;
-  padding-right: 2%; }
+  flex-flow: column wrap;
+  padding-right: 2%; 
+}
 
-.splash-word {
+.main-img {
+  height: 500px;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 20%; }
+
+.main-word {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.splash-job {
-  align-self: center;
-  padding-right: 2%
+.main-name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #F9BA00; } 
+
+.main-job {
+  padding-right: 2%;
+} 
+
+.main-container > g {
+  position: absolute
 }
-/*# sourceMappingURL=App.css.map */
+
+.color-block {
+  background-color: #64a2b3;
+  position: relative;
+  height: 50rem;
+  width: 102%;
+  z-index: -1;
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
+  clip-path: ppolygon(0 0, 100% 0, 100% 70%, 0 90%);
+}
+
+
+.portrait {
+  background-image: url(https://photos.google.com/photo/AF1QipPmnznbgCA2y0uIIveXkS-unwdObK1RTlwZMlOz);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10rem
+} 

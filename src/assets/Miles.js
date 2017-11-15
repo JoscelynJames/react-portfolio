@@ -4,36 +4,36 @@ import anime from 'animejs';
 
 class Miles extends React.Component {
   handleMouse(e) {
-    let points = e.target.points;
+    // console.log(typeof e.target.getAttribute("points"));
+    // let points = e.target.getAttribute('points').split(' ');
+    // console.log(points, 'points')
 
-    this.translateXandYValues(points)
+    // let newPoints = points.map((p) => {
+    //   return Number(p) + 10;
+    // })
+    // console.log(newPoints, 'np')
+    // console.log(typeof newPoints.join(' '), 'np joined')
 
-    var ruffleFeathers = anime({
-      targets: "polygon",
-      translateX: function(polygon) {
-        // console.log(polygon)
-
-      },
+   anime({
+      targets: '#miles',
+      scale: 1.1,
     });
 
-    document.querySelector("polygon").onmouseover = ruffleFeathers.restart;
+    // document.querySelector("polygon").onmouseover = ruffleFeathers.restart;
+
   }
 
   handleMouseExit() {
     console.log('left')
-  }
 
-  translateXandYValues(polygon) {
-    for (var i = 0; i < polygon["length"]; i++) {
-      let xpoints = polygon[i]["x"];
-      console.log(xpoints)
-      console.log(i)
-      // return xpoints
-    }
+    anime({
+      targets: "#miles",
+      scale: 1,
+    });
   }
 
   render() {
-    return <svg width="405px" height="1374px" viewBox="0 0 1114 1374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...this.props}>
+    return <svg id="miles" width="405px" height="1374px" viewBox="0 0 1114 1374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...this.props}>
         <defs />
         <g id="Page-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
           <g id="Miles" transform="translate(1.000000, 1.000000)">
@@ -99,10 +99,10 @@ class Miles extends React.Component {
                 <polygon id="Path-65" fill="#0C0C0C" points="59.1634392 14.3470016 50.0525703 5.74142545 34.6357414 32.5693866" />
               </g>
               <g id="eye-lid" transform="translate(505.000000, 90.000000)">
-                <Anime translateY={-40} direction="alternate" duration={2500} loop={true} easing="easeOutCubic">
+                <Anime translateY={-40} direction="alternate" duration={2300} loop={true} easing="easeOutCubic">
                   <polygon id="Path-5" stroke="#E8DDDD" fill="#E8DDDD" points="0 29.160357 13.3995532 11.5208028 39.9451196 4.54747351e-13 51.5248069 4.89686562 61.2008957 13.2810873 66.6399994 29.160357 66.6399994 49.6300011" />
                 </Anime>
-                <Anime translateY={40} direction="alternate" duration={2500} loop={true} easing="easeOutCubic">
+                <Anime translateY={40} direction="alternate" duration={2300} loop={true} easing="easeOutCubic">
                   <polygon id="Path-39" stroke="#D9C6C6" fill="#D9C6C6" points="63.5989509 49.2384242 64.265388 60.9259099 46.170689 79.539064 16.5194115 76.9271272 0.598394361 52.2430829 0.598394361 29.5697332" />
                 </Anime>
               </g>
