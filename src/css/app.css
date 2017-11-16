@@ -4,6 +4,7 @@
   flex-direction: row;
   justify-content: space-around;
   z-index: 1;
+  background-color: white;
 }
 
 .svg-button {
@@ -98,4 +99,25 @@ a {
   }
 
 
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.project-container {
+  margin: 1%;
+  margin-bottom: 5%;
+  height: 500px;
+  width: 300px;
+  box-shadow: 5px 3px 3px rgb(173, 172, 172);
+  overflow: scroll
+}
+
+.project-img {
+  height: 300px;
+  width: 300px;
 }

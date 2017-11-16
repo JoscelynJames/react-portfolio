@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 class App extends Component {
   render() {
     return <div className="App">
-      <SideNav />
+      {/* <SideNav /> */}
       {/* <BrowserRouter>
           <Switch>
             <Route path="/" exact component={MainPage} />
@@ -19,7 +19,7 @@ class App extends Component {
           </Switch>
         </BrowserRouter> */}
       <MainPage />
-      {/* <Projects /> */}
+      <Projects />
       <AboutMe />
       {/* <Contact /> */}
     </div>;
