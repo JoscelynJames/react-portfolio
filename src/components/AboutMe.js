@@ -1,7 +1,15 @@
 import React from 'react';
+
+import ButtonSVG from './ButtonSVG'
+
 import me from '../assets/Joscelyn-sm.jpg';
+import resume from '../assets/resume.pdf';
 
 class AboutMe extends React.Component {
+	handleClick() {
+		console.log('cliked')
+	}
+
 	render() {
 		return (
 			<div className="aboutme-container">
@@ -15,10 +23,16 @@ class AboutMe extends React.Component {
 				<div className="bio-pic">
 					<div className="about-me">
 						<ParagraphAboutMe />
+
+						<div onClick={this.handleClick} className="download-bttn">
+							<a href={resume} download="resume.pdf">
+								<ButtonSVG text="Resume" />
+							</a>
+						</div>
+
 					</div>
 					<Portrait />
 				</div>
-
 
 			</div>
 		)
@@ -37,7 +51,7 @@ function ParagraphAboutMe() {
 	return (<div className="aboutme-bio">
 		<h5>Collaborate. Develop. Repeat.</h5>
 		<p>
-			I am a full stack developer graduating from Galvanize web development immersive. During my time at Galvanize, I learned core values to prep me for developing in the wild. Im a NERP (Node, Express, React, PostgreSQl), but my curiosity leads me to new languages and technologies. 
+			I am a full stack developer graduating from Galvanize web development immersive. During my time at Galvanize, I learned core values to prep me for developing in the wild. Im a NERP (Node, Express, React, PostgreSQl), but my curiosity leads me to new languages and technologies. I am always looking for oporutnites to colaberate.
 	</p>
 	</div>
 	)

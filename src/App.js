@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './css/app.css';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+// import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import MainPage from './components/MainPage';
 import AboutMe from './components/AboutMe';
-import SideNav from './components/SideNav';
+// import SideNav from './components/SideNav';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+// import Contact from './components/Contact';
 
 class App extends Component {
   render() {

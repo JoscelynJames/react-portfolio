@@ -1,7 +1,6 @@
 import React from 'react';
 import Anime from 'react-anime';
 import Miles from '../assets/Miles';
-import SideNav from './SideNav'
 
 class MainPage extends React.Component {
 

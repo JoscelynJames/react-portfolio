@@ -4,7 +4,6 @@
   flex-direction: row;
   justify-content: space-around;
   z-index: 1;
-  background-color: white;
 }
 
 .svg-button {
@@ -97,7 +96,10 @@ a {
     flex-wrap: wrap-reverse;
     margin: 5rem
   }
+}
 
+.download-bttn a svg {
+  height: 40px;
 
 }
 
@@ -113,7 +115,7 @@ a {
   margin-bottom: 5%;
   height: 500px;
   width: 300px;
-  box-shadow: 5px 3px 3px rgb(173, 172, 172);
+  box-shadow: 5px 3px 3px  rgb(173, 172, 172);
   overflow: scroll
 }
 
