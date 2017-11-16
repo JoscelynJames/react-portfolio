@@ -24,8 +24,6 @@ class Miles extends React.Component {
   }
 
   handleMouseExit() {
-    console.log('left')
-
     anime({
       targets: "#miles",
       scale: 1,
@@ -33,7 +31,7 @@ class Miles extends React.Component {
   }
 
   render() {
-    return <svg id="miles" width="405px" height="1374px" viewBox="0 0 1114 1374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...this.props}>
+    return <svg onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="miles" width="405px" height="1374px" viewBox="0 0 1114 1374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...this.props}>
         <defs />
         <g id="Page-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
           <g id="Miles" transform="translate(1.000000, 1.000000)">
@@ -142,190 +140,190 @@ class Miles extends React.Component {
                 <polygon id="Path-98" fill="#D8D8D8" points="41.5570749 11.9573579 3.1957144 46.2889776 41.2654337 38.1542368" />
               </g>
               <g id="body" transform="translate(85.000000, 0.000000)">
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-99" fill="#2A2A2A" points="665.59879 216.26712 695.596631 223.815594 632.277828 193.212263" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-100" fill="#151515" points="696.115294 224.213607 664.782438 186.274525 628.103208 191.729199" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-101" stroke="#322D1A" fill="#322D1A" points="736.899795 235.753133 695.715417 223.944451 704.344037 265.495106" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-102" stroke="#4F4E38" fill="#4F4E38" points="746.67376 214.811091 737.34237 235.006961 695.880811 223.151265" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-103" stroke="#676952" fill="#676952" points="747.385272 214.107332 747.385272 186.836461 695.562473 222.567979" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-104" stroke="#7A795D" fill="#7A795D" points="731.484358 140.844131 746.994846 185.843644 695.994166 221.185181" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-105" stroke="#8B8062" fill="#8B8062" points="731.656073 141.121583 684.71402 85.404745 694.912253 221.627896" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-106" stroke="#5E5A37" fill="#5E5A37" points="694.33552 221.491521 666.251218 187.516251 684.038893 87.1595806" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-107" stroke="#59512A" fill="#59512A" points="665.797483 187.720601 683.010564 87.4731758 632.824072 193.821186" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-108" stroke="#6E6B4C" fill="#6E6B4C" points="683.947562 84.0997817 617.526204 36.1059013 632.968107 192.390308" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-109" stroke="#685E3B" fill="#685E3B" points="634.3631 192.71683 594.107143 152.415614 600.90268 215.542656" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-110" stroke="#645E3A" fill="#645E3A" points="634.452148 192.918934 616.888589 37.8425297 593.79098 150.771266" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-111" stroke="#85897C" fill="#85897C" points="600.396293 216.312669 520.666861 239.403941 535.621468 269.725289" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-112" stroke="#9F9A6C" fill="#9F9A6C" points="520.624028 238.577122 593.730515 153.397291 601.306147 215.500813" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-113" stroke="#918D65" fill="#918D65" points="544.189652 209.905195 595.570203 152.004874 530.622695 119.599168" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-114" stroke="#9A9674" fill="#9A9674" points="593.818294 150.898272 616.401478 35.9967596 529.859117 118.079765" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-115" stroke="#908A61" fill="#908A61" points="615.329373 35.7402716 529.954195 117.520486 490.701521 73.1360795" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-116" stroke="#8F7E60" fill="#8F7E60" points="615.503883 35.3226477 536.38275 13.6900958 490.870761 72.5680745" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-117" stroke="#9D906E" fill="#9D906E" points="535.995978 13.2154569 445.479588 0.529652739 489.908146 72.5225719" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-118" stroke="#A29D7F" fill="#A29D7F" points="488.846696 72.4616713 446.776069 2.95117498 467.530391 65.0366366" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-119" stroke="#998C69" fill="#998C69" points="467.596704 65.4844086 437.698291 68.1402512 445.492989 1.71547978" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-120" stroke="#9D8B65" fill="#9D8B65" points="445.623452 1.36189984 437.096872 68.4907146 420.222063 78.2434627" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-121" stroke="#70693B" fill="#70693B" points="445.616593 1.58483939 361.247691 13.4486535 419.297721 79.708004" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-122" stroke="#525731" fill="#525731" points="418.640907 80.6443502 381.913714 112.506943 360.580587 13.2960257" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-124" stroke="#5E5F23" fill="#5E5F23" points="381.960565 112.216274 314.356643 51.8319851 359.879185 14.1483407" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-125" stroke="#2F2C19" fill="#2F2C19" points="535.01925 269.840027 519.504742 238.946101 497.709176 274.053717" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-126" stroke="#434B36" fill="#434B36" points="519.513538 238.68073 457.993006 336.127898 488.888824 238.68073" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-127" stroke="#738065" fill="#738065" points="480.171155 229.499312 454.734731 343.274351 489.623436 238.615066" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-128" stroke="#ADBA9F" fill="#ADBA9F" points="479.569565 228.830018 457.348387 231.062816 455.62773 337.624337" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-129" stroke="#8E9B7F" fill="#8E9B7F" points="457.13128 232.261153 418.749813 206.776073 454.806167 340.873352" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-130" stroke="#41461A" fill="#41461A" points="382.51654 112.65747 379.381782 123.504586 313.555918 51.4881078" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-131" stroke="#74734F" fill="#74734F" points="314.014461 52.4576824 307.778085 111.404649 378.750626 124.246877" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-132" stroke="#697851" fill="#697851" points="313.294871 52.4625283 246.75428 143.09739 307.775925 111.749484" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-133" stroke="#969B76" fill="#969B76" points="308.654152 112.597325 339.124964 165.319115 379.316813 124.59402" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-134" stroke="#7C8065" fill="#7C8065" points="380.038525 124.995877 418.528689 207.361779 339.704855 166.178828" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-135" stroke="#6C8167" fill="#6C8167" points="454.578584 342.866599 385.361634 272.181315 419.209413 208.647334" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-136" stroke="#6F785E" fill="#6F785E" points="418.154148 209.828173 304.575509 248.104097 385.114892 271.34195" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-137" stroke="#959579" fill="#959579" points="419.703293 208.18368 339.104723 167.015789 303.748582 247.662746" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-138" stroke="#D8CFB0" fill="#D8CFB0" points="338.863188 166.461937 304.20642 245.390326 307.517643 111.945145" />
+                <polygon id="Path-99" fill="#2A2A2A" points="665.59879 216.26712 695.596631 223.815594 632.277828 193.212263" />
+                <polygon id="Path-100" fill="#151515" points="696.115294 224.213607 664.782438 186.274525 628.103208 191.729199" />
+                <polygon id="Path-101" stroke="#322D1A" fill="#322D1A" points="736.899795 235.753133 695.715417 223.944451 704.344037 265.495106" />
+                <polygon id="Path-102" stroke="#4F4E38" fill="#4F4E38" points="746.67376 214.811091 737.34237 235.006961 695.880811 223.151265" />
+                <polygon id="Path-103" stroke="#676952" fill="#676952" points="747.385272 214.107332 747.385272 186.836461 695.562473 222.567979" />
+                <polygon id="Path-104" stroke="#7A795D" fill="#7A795D" points="731.484358 140.844131 746.994846 185.843644 695.994166 221.185181" />
+                <polygon id="Path-105" stroke="#8B8062" fill="#8B8062" points="731.656073 141.121583 684.71402 85.404745 694.912253 221.627896" />
+                <polygon id="Path-106" stroke="#5E5A37" fill="#5E5A37" points="694.33552 221.491521 666.251218 187.516251 684.038893 87.1595806" />
+                <polygon id="Path-107" stroke="#59512A" fill="#59512A" points="665.797483 187.720601 683.010564 87.4731758 632.824072 193.821186" />
+                <polygon id="Path-108" stroke="#6E6B4C" fill="#6E6B4C" points="683.947562 84.0997817 617.526204 36.1059013 632.968107 192.390308" />
+                <polygon id="Path-109" stroke="#685E3B" fill="#685E3B" points="634.3631 192.71683 594.107143 152.415614 600.90268 215.542656" />
+                <polygon id="Path-110" stroke="#645E3A" fill="#645E3A" points="634.452148 192.918934 616.888589 37.8425297 593.79098 150.771266" />
+                <polygon id="Path-111" stroke="#85897C" fill="#85897C" points="600.396293 216.312669 520.666861 239.403941 535.621468 269.725289" />
+                <polygon id="Path-112" stroke="#9F9A6C" fill="#9F9A6C" points="520.624028 238.577122 593.730515 153.397291 601.306147 215.500813" />
+                <polygon id="Path-113" stroke="#918D65" fill="#918D65" points="544.189652 209.905195 595.570203 152.004874 530.622695 119.599168" />
+                <polygon id="Path-114" stroke="#9A9674" fill="#9A9674" points="593.818294 150.898272 616.401478 35.9967596 529.859117 118.079765" />
+                <polygon id="Path-115" stroke="#908A61" fill="#908A61" points="615.329373 35.7402716 529.954195 117.520486 490.701521 73.1360795" />
+                <polygon id="Path-116" stroke="#8F7E60" fill="#8F7E60" points="615.503883 35.3226477 536.38275 13.6900958 490.870761 72.5680745" />
+                <polygon id="Path-117" stroke="#9D906E" fill="#9D906E" points="535.995978 13.2154569 445.479588 0.529652739 489.908146 72.5225719" />
+                <polygon id="Path-118" stroke="#A29D7F" fill="#A29D7F" points="488.846696 72.4616713 446.776069 2.95117498 467.530391 65.0366366" />
+                <polygon id="Path-119" stroke="#998C69" fill="#998C69" points="467.596704 65.4844086 437.698291 68.1402512 445.492989 1.71547978" />
+                <polygon id="Path-120" stroke="#9D8B65" fill="#9D8B65" points="445.623452 1.36189984 437.096872 68.4907146 420.222063 78.2434627" />
+                <polygon id="Path-121" stroke="#70693B" fill="#70693B" points="445.616593 1.58483939 361.247691 13.4486535 419.297721 79.708004" />
+                <polygon id="Path-122" stroke="#525731" fill="#525731" points="418.640907 80.6443502 381.913714 112.506943 360.580587 13.2960257" />
+                <polygon id="Path-124" stroke="#5E5F23" fill="#5E5F23" points="381.960565 112.216274 314.356643 51.8319851 359.879185 14.1483407" />
+                <polygon id="Path-125" stroke="#2F2C19" fill="#2F2C19" points="535.01925 269.840027 519.504742 238.946101 497.709176 274.053717" />
+                <polygon id="Path-126" stroke="#434B36" fill="#434B36" points="519.513538 238.68073 457.993006 336.127898 488.888824 238.68073" />
+                <polygon id="Path-127" stroke="#738065" fill="#738065" points="480.171155 229.499312 454.734731 343.274351 489.623436 238.615066" />
+                <polygon id="Path-128" stroke="#ADBA9F" fill="#ADBA9F" points="479.569565 228.830018 457.348387 231.062816 455.62773 337.624337" />
+                <polygon id="Path-129" stroke="#8E9B7F" fill="#8E9B7F" points="457.13128 232.261153 418.749813 206.776073 454.806167 340.873352" />
+                <polygon id="Path-130" stroke="#41461A" fill="#41461A" points="382.51654 112.65747 379.381782 123.504586 313.555918 51.4881078" />
+                <polygon id="Path-131" stroke="#74734F" fill="#74734F" points="314.014461 52.4576824 307.778085 111.404649 378.750626 124.246877" />
+                <polygon id="Path-132" stroke="#697851" fill="#697851" points="313.294871 52.4625283 246.75428 143.09739 307.775925 111.749484" />
+                <polygon id="Path-133" stroke="#969B76" fill="#969B76" points="308.654152 112.597325 339.124964 165.319115 379.316813 124.59402" />
+                <polygon id="Path-134" stroke="#7C8065" fill="#7C8065" points="380.038525 124.995877 418.528689 207.361779 339.704855 166.178828" />
+                <polygon id="Path-135" stroke="#6C8167" fill="#6C8167" points="454.578584 342.866599 385.361634 272.181315 419.209413 208.647334" />
+                <polygon id="Path-136" stroke="#6F785E" fill="#6F785E" points="418.154148 209.828173 304.575509 248.104097 385.114892 271.34195" />
+                <polygon id="Path-137" stroke="#959579" fill="#959579" points="419.703293 208.18368 339.104723 167.015789 303.748582 247.662746" />
+                <polygon id="Path-138" stroke="#D8CFB0" fill="#D8CFB0" points="338.863188 166.461937 304.20642 245.390326 307.517643 111.945145" />
                 <polyline id="Path-139" stroke="#B4AE8A" fill="#B4AE8A" points="306.852112 112.553161 217.093717 209.141467 304.171988 248.090648" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-140" stroke="#8DA460" fill="#8DA460" points="304.915648 113.610589 245.775961 144.284554 216.564572 208.448627" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-141" stroke="#AFB390" fill="#AFB390" points="217.292767 210.095925 223.084976 264.903469 304.261344 249.167611" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-142" stroke="#556A56" fill="#556A56" points="455.061191 344.37443 346.032379 357.611992 385.153962 272.329145" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-143" stroke="#839179" fill="#839179" points="385.771334 271.949078 345.923481 357.200691 305.783537 249.643166" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-144" stroke="#798968" fill="#798968" points="223.543345 265.305026 305.180841 248.213564 345.848179 357.641189" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-145" stroke="#404F37" fill="#404F37" points="455.792645 345.379515 371.063914 421.205739 346.159586 358.416695" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-146" stroke="#59624D" fill="#59624D" points="457.787328 336.455807 466.99807 378.131421 371.587008 422.76722" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-147" stroke="#2D2F18" fill="#2D2F18" points="372.713437 423.734095 519.790203 403.493734 467.386922 377.691933" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-148" stroke="#3B3827" fill="#3B3827" points="519.727763 402.861052 487.36366 453.5793 372.463351 425.033219" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-149" stroke="#41432C" fill="#41432C" points="372.163637 425.729221 486.674318 454.095474 449.040246 484.328279" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-150" stroke="#435034" fill="#435034" points="415.415872 458.902137 325.371641 445.26224 371.897875 423.849016" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-151" stroke="#5A644E" fill="#5A644E" points="325.941097 445.130699 346.180109 357.56596 371.700745 422.773709" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-152" stroke="#6E7961" fill="#6E7961" points="346.967812 357.268717 326.109264 442.75682 223.097066 265.17055" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-153" stroke="#8B8D56" fill="#8B8D56" points="327.395253 446.198874 236.958999 388.285646 223.487873 266.156607" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-154" stroke="#93AD59" fill="#93AD59" points="223.686448 265.912741 147.808142 342.716874 215.973858 208.235121" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-155" stroke="#859D48" fill="#859D48" points="224.540322 265.375402 236.144641 386.830837 145.332691 346.3274" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-156" stroke="#3E5830" fill="#3E5830" points="327.227845 446.996292 258.627599 441.653925 237.705522 388.1458" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-157" stroke="#3E5830" fill="#3E5830" points="416.891533 459.642091 378.179675 489.990796 327.671356 446.226909" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-158" stroke="#88A844" fill="#88A844" points="237.587995 387.857863 95.7347428 399.287396 144.181933 345.416311" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-159" stroke="#6C8636" fill="#6C8636" points="259.317796 441.619872 237.374694 388.22941 141.726636 396.412903" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-160" stroke="#7FA536" fill="#7FA536" points="140.193563 396.300913 47.6328221 452.889493 95.4948074 398.630545" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-161" stroke="#8EA244" fill="#8EA244" points="141.118144 396.492773 128.37141 439.831186 46.8721916 453.695485" />
+                <polygon id="Path-140" stroke="#8DA460" fill="#8DA460" points="304.915648 113.610589 245.775961 144.284554 216.564572 208.448627" />
+                <polygon id="Path-141" stroke="#AFB390" fill="#AFB390" points="217.292767 210.095925 223.084976 264.903469 304.261344 249.167611" />
+                <polygon id="Path-142" stroke="#556A56" fill="#556A56" points="455.061191 344.37443 346.032379 357.611992 385.153962 272.329145" />
+                <polygon id="Path-143" stroke="#839179" fill="#839179" points="385.771334 271.949078 345.923481 357.200691 305.783537 249.643166" />
+                <polygon id="Path-144" stroke="#798968" fill="#798968" points="223.543345 265.305026 305.180841 248.213564 345.848179 357.641189" />
+                <polygon id="Path-145" stroke="#404F37" fill="#404F37" points="455.792645 345.379515 371.063914 421.205739 346.159586 358.416695" />
+                <polygon id="Path-146" stroke="#59624D" fill="#59624D" points="457.787328 336.455807 466.99807 378.131421 371.587008 422.76722" />
+                <polygon id="Path-147" stroke="#2D2F18" fill="#2D2F18" points="372.713437 423.734095 519.790203 403.493734 467.386922 377.691933" />
+                <polygon id="Path-148" stroke="#3B3827" fill="#3B3827" points="519.727763 402.861052 487.36366 453.5793 372.463351 425.033219" />
+                <polygon id="Path-149" stroke="#41432C" fill="#41432C" points="372.163637 425.729221 486.674318 454.095474 449.040246 484.328279" />
+                <polygon id="Path-150" stroke="#435034" fill="#435034" points="415.415872 458.902137 325.371641 445.26224 371.897875 423.849016" />
+                <polygon id="Path-151" stroke="#5A644E" fill="#5A644E" points="325.941097 445.130699 346.180109 357.56596 371.700745 422.773709" />
+                <polygon id="Path-152" stroke="#6E7961" fill="#6E7961" points="346.967812 357.268717 326.109264 442.75682 223.097066 265.17055" />
+                <polygon id="Path-153" stroke="#8B8D56" fill="#8B8D56" points="327.395253 446.198874 236.958999 388.285646 223.487873 266.156607" />
+                <polygon id="Path-154" stroke="#93AD59" fill="#93AD59" points="223.686448 265.912741 147.808142 342.716874 215.973858 208.235121" />
+                <polygon id="Path-155" stroke="#859D48" fill="#859D48" points="224.540322 265.375402 236.144641 386.830837 145.332691 346.3274" />
+                <polygon id="Path-156" stroke="#3E5830" fill="#3E5830" points="327.227845 446.996292 258.627599 441.653925 237.705522 388.1458" />
+                <polygon id="Path-157" stroke="#3E5830" fill="#3E5830" points="416.891533 459.642091 378.179675 489.990796 327.671356 446.226909" />
+                <polygon id="Path-158" stroke="#88A844" fill="#88A844" points="237.587995 387.857863 95.7347428 399.287396 144.181933 345.416311" />
+                <polygon id="Path-159" stroke="#6C8636" fill="#6C8636" points="259.317796 441.619872 237.374694 388.22941 141.726636 396.412903" />
+                <polygon id="Path-160" stroke="#7FA536" fill="#7FA536" points="140.193563 396.300913 47.6328221 452.889493 95.4948074 398.630545" />
+                <polygon id="Path-161" stroke="#8EA244" fill="#8EA244" points="141.118144 396.492773 128.37141 439.831186 46.8721916 453.695485" />
                 <polyline id="Path-162" stroke="#62922B" fill="#62922B" points="128.835759 439.724121 188.073906 414.882667 142.103381 395.721665 128.835759 437.71876" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-163" stroke="#4D7247" fill="#4D7247" points="129.888806 439.305182 259.198284 441.983929 188.509598 415.130502" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-164" stroke="#274D10" fill="#274D10" points="485.348979 455.390606 463.448291 544.613906 449.977687 484.946875" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-165" stroke="#244F1A" fill="#244F1A" points="377.748705 491.096382 449.748735 485.202657 417.496914 460.118107" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-166" stroke="#33663D" fill="#33663D" points="449.351611 485.448608 462.867877 545.572289 377.860098 490.893447" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-167" stroke="#245816" fill="#245816" points="463.033583 546.027773 450.777279 607.427634 378.309608 492.096041" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-168" stroke="#274212" fill="#274212" points="451.606249 606.555462 452.92607 661.030706 392.260021 623.960654" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-169" stroke="#47733C" fill="#47733C" points="450.394345 607.348597 401.810943 621.716173 379.222112 492.749842" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-170" stroke="#2F5C1B" fill="#2F5C1B" points="377.799468 490.160056 333.642554 567.042387 401.837784 622.571627" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-171" stroke="#639060" fill="#639060" points="327.228747 447.618054 332.890317 566.688148 377.891153 491.258196" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-172" stroke="#1D4200" fill="#1D4200" points="451.743701 661.590818 362.608872 675.412384 333.025762 566.198465" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-173" stroke="#264C02" fill="#264C02" points="452.861016 660.873402 449.332931 717.102676 363.023519 675.287084" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-174" stroke="#7FB170" fill="#7FB170" points="326.391996 445.238512 331.915599 564.13546 259.020779 441.409186" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-175" stroke="#7C9E0D" fill="#7C9E0D" points="47.0815353 453.553896 55.6944225 473.019307 126.903854 439.937598" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-176" stroke="#78951B" fill="#78951B" points="56.0739204 473.723358 57.9782847 491.816377 129.465459 439.187782" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-177" stroke="#57914E" fill="#57914E" points="130.398065 440.360443 178.687425 479.650379 258.67453 442.083031" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-178" stroke="#3E8630" fill="#3E8630" points="258.940253 441.627954 252.101721 507.458738 178.924672 480.545704" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-179" stroke="#52A742" fill="#52A742" points="259.407567 443.058897 331.320653 563.546805 252.943602 506.626551" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-180" stroke="#60871B" fill="#60871B" points="58.0309022 492.766538 180.31162 480.735498 129.713288 439.716031" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-181" stroke="#678F13" fill="#678F13" points="58.1181983 493.067386 58.1181983 519.089818 179.724822 481.316008" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-182" stroke="#4FA23F" fill="#4FA23F" points="252.320474 507.934483 179.456556 510.364419 180.780281 481.887758" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-183" stroke="#63C150" fill="#63C150" points="179.985839 481.762429 179.985839 510.783969 61.150167 519.079723" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-184" stroke="#4D9240" fill="#4D9240" points="256.160037 507.417704 210.223585 651.350638 178.729106 510.81594" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-185" stroke="#2A641C" fill="#2A641C" points="210.624757 652.203123 331.819 563.987836 254.625903 508.463315" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-186" stroke="#255B18" fill="#255B18" points="331.6733 564.952026 288.634254 673.749397 211.383381 652.680173" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-187" stroke="#2B540C" fill="#2B540C" points="331.913276 564.729191 361.790328 673.971983 288.976799 673.971983" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-188" stroke="#61A554" fill="#61A554" points="58.6755758 520.328957 177.932474 509.955469 208.939114 650.067758" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-189" stroke="#4A7F11" fill="#4A7F11" points="58.3014344 519.682575 66.9968742 611.031234 152.347896 599.911318" />
+                <polygon id="Path-163" stroke="#4D7247" fill="#4D7247" points="129.888806 439.305182 259.198284 441.983929 188.509598 415.130502" />
+                <polygon id="Path-164" stroke="#274D10" fill="#274D10" points="485.348979 455.390606 463.448291 544.613906 449.977687 484.946875" />
+                <polygon id="Path-165" stroke="#244F1A" fill="#244F1A" points="377.748705 491.096382 449.748735 485.202657 417.496914 460.118107" />
+                <polygon id="Path-166" stroke="#33663D" fill="#33663D" points="449.351611 485.448608 462.867877 545.572289 377.860098 490.893447" />
+                <polygon id="Path-167" stroke="#245816" fill="#245816" points="463.033583 546.027773 450.777279 607.427634 378.309608 492.096041" />
+                <polygon id="Path-168" stroke="#274212" fill="#274212" points="451.606249 606.555462 452.92607 661.030706 392.260021 623.960654" />
+                <polygon id="Path-169" stroke="#47733C" fill="#47733C" points="450.394345 607.348597 401.810943 621.716173 379.222112 492.749842" />
+                <polygon id="Path-170" stroke="#2F5C1B" fill="#2F5C1B" points="377.799468 490.160056 333.642554 567.042387 401.837784 622.571627" />
+                <polygon id="Path-171" stroke="#639060" fill="#639060" points="327.228747 447.618054 332.890317 566.688148 377.891153 491.258196" />
+                <polygon id="Path-172" stroke="#1D4200" fill="#1D4200" points="451.743701 661.590818 362.608872 675.412384 333.025762 566.198465" />
+                <polygon id="Path-173" stroke="#264C02" fill="#264C02" points="452.861016 660.873402 449.332931 717.102676 363.023519 675.287084" />
+                <polygon id="Path-174" stroke="#7FB170" fill="#7FB170" points="326.391996 445.238512 331.915599 564.13546 259.020779 441.409186" />
+                <polygon id="Path-175" stroke="#7C9E0D" fill="#7C9E0D" points="47.0815353 453.553896 55.6944225 473.019307 126.903854 439.937598" />
+                <polygon id="Path-176" stroke="#78951B" fill="#78951B" points="56.0739204 473.723358 57.9782847 491.816377 129.465459 439.187782" />
+                <polygon id="Path-177" stroke="#57914E" fill="#57914E" points="130.398065 440.360443 178.687425 479.650379 258.67453 442.083031" />
+                <polygon id="Path-178" stroke="#3E8630" fill="#3E8630" points="258.940253 441.627954 252.101721 507.458738 178.924672 480.545704" />
+                <polygon id="Path-179" stroke="#52A742" fill="#52A742" points="259.407567 443.058897 331.320653 563.546805 252.943602 506.626551" />
+                <polygon id="Path-180" stroke="#60871B" fill="#60871B" points="58.0309022 492.766538 180.31162 480.735498 129.713288 439.716031" />
+                <polygon id="Path-181" stroke="#678F13" fill="#678F13" points="58.1181983 493.067386 58.1181983 519.089818 179.724822 481.316008" />
+                <polygon id="Path-182" stroke="#4FA23F" fill="#4FA23F" points="252.320474 507.934483 179.456556 510.364419 180.780281 481.887758" />
+                <polygon id="Path-183" stroke="#63C150" fill="#63C150" points="179.985839 481.762429 179.985839 510.783969 61.150167 519.079723" />
+                <polygon id="Path-184" stroke="#4D9240" fill="#4D9240" points="256.160037 507.417704 210.223585 651.350638 178.729106 510.81594" />
+                <polygon id="Path-185" stroke="#2A641C" fill="#2A641C" points="210.624757 652.203123 331.819 563.987836 254.625903 508.463315" />
+                <polygon id="Path-186" stroke="#255B18" fill="#255B18" points="331.6733 564.952026 288.634254 673.749397 211.383381 652.680173" />
+                <polygon id="Path-187" stroke="#2B540C" fill="#2B540C" points="331.913276 564.729191 361.790328 673.971983 288.976799 673.971983" />
+                <polygon id="Path-188" stroke="#61A554" fill="#61A554" points="58.6755758 520.328957 177.932474 509.955469 208.939114 650.067758" />
+                <polygon id="Path-189" stroke="#4A7F11" fill="#4A7F11" points="58.3014344 519.682575 66.9968742 611.031234 152.347896 599.911318" />
                 <polyline id="Path-190" stroke="#3D6D1F" fill="#3D6D1F" points="210.873976 652.115534 208.391701 651.434186 68.7197994 611.81047 152.412282 600.093454" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-191" stroke="#0A2E06" fill="#0A2E06" points="57.4129012 522.232973 24.7867438 630.950518 66.6455061 611.548899" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-192" stroke="#042805" fill="#042805" points="66.0984429 612.461986 7.99107211 716.631331 24.4565808 631.787842" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-194" stroke="#2A640E" fill="#2A640E" points="210.704038 653.153961 155.233248 672.700673 69.1601753 612.599235" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-195" stroke="#396415" fill="#396415" points="154.271807 672.706745 25.903943 686.330144 66.874382 612.211892" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-196" stroke="#304E06" fill="#304E06" points="450.398009 718.477514 443.014493 764.72715 362.297923 674.999399" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-197" stroke="#365809" fill="#365809" points="361.461625 674.891219 368.577485 755.789123 443.099703 766.042234" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-198" stroke="#335D09" fill="#335D09" points="362.45329 674.821642 367.814361 756.266283 287.445093 673.746007" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-199" stroke="#32690E" fill="#32690E" points="209.735497 652.747626 219.359797 723.663466 288.178689 674.023922" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-200" stroke="#2F5F0F" fill="#2F5F0F" points="288.64886 674.951414 218.765996 724.454548 368.149181 757.915284" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-201" stroke="#337217" fill="#337217" points="210.060116 651.921909 218.891064 723.986848 153.339006 673.406584" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-202" stroke="#4B801E" fill="#4B801E" points="25.2508967 687.32671 8.78751196 716.817049 124.163608 682.195227 152.67641 673.639164" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-203" stroke="#417119" fill="#417119" points="219.731262 724.703904 152.557941 672.697733 10.4584494 717.324088" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-204" stroke="#497110" fill="#497110" points="8.12592314 717.524919 5.5872752 793.861426 150.734482 722.450771" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-205" stroke="#377714" fill="#377714" points="150.727526 722.970163 205.040474 782.383269 290.502222 741.628614 220.236752 723.557568" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-206" stroke="#405D0B" fill="#405D0B" points="366.28113 756.307568 388.386972 819.643065 443.289964 767.046747" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-207" stroke="#37610B" fill="#37610B" points="387.984116 820.056423 289.173092 740.401069 366.987332 757.743122" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-208" stroke="#576808" fill="#576808" points="388.374709 820.960714 424.565391 836.89345 442.92682 766.469729" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-209" stroke="#6D7D1A" fill="#6D7D1A" points="424.733618 837.750062 406.974325 875.223319 387.856402 820.664769" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-210" stroke="#256F0E" fill="#256F0E" points="290.695442 742.220462 388.402881 821.034198 205.395297 781.62733" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-211" stroke="#3E8118" fill="#3E8118" points="204.370457 781.306797 236.972393 882.032508 309.316224 805.00376" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-212" stroke="#396A17" fill="#396A17" points="388.94296 821.35045 238.019231 882.063701 309.513154 804.702715" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-213" stroke="#568B1C" fill="#568B1C" points="150.527852 724.047234 161.87906 869.809554 204.871342 780.559665" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-214" stroke="#4F9025" fill="#4F9025" points="237.252198 883.206943 160.766444 870.478185 205.053532 781.690121" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-215" stroke="#4D730E" fill="#4D730E" points="149.713051 723.895756 156.354176 805.254599 66.7302149 764.012019" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-216" stroke="#4D741B" fill="#4D741B" points="161.089649 870.541963 66.292147 764.424775 156.230824 804.348499" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-217" stroke="#5E691A" fill="#5E691A" points="407.906484 875.628669 238.140597 882.525142 388.329542 821.819784" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-218" stroke="#5C7D2A" fill="#5C7D2A" points="159.884453 870.856716 5.74185035 794.751268 66.3727018 764.264674" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-219" stroke="#7E8712" fill="#7E8712" points="4.44539427 794.324802 0.524410473 840.372425 75.0861559 829.721081" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-220" stroke="#8A940F" fill="#8A940F" points="77.6906524 830.214164 62.1915472 898.408009 0.942772445 840.951992" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-221" stroke="#737C07" fill="#737C07" points="62.5778465 898.164955 162.289281 870.877251 78.0464544 830.315822" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-222" stroke="#816F0E" fill="#816F0E" points="0.00513037798 841.105845 4.46225228 892.550355 61.6221876 897.966365" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-223" stroke="#ACA716" fill="#ACA716" points="4.27288015 893.310714 15.2184699 921.557653 61.6297677 898.322631" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-224" stroke="#87900F" fill="#87900F" points="64.6083332 897.673846 120.509505 972.848459 15.2737896 922.536159" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-225" stroke="#988C17" fill="#988C17" points="161.494741 870.663463 124.187059 976.511848 62.5996098 898.565275" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-226" stroke="#897D1A" fill="#897D1A" points="89.4578733 957.757581 28.9662684 957.757581 15.0484725 922.347694" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-227" stroke="#45670A" fill="#45670A" points="71.4166738 958.179197 59.4914134 1015.73431 47.0079107 979.782511 29.5919025 958.179197" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-228" stroke="#6C7B1C" fill="#6C7B1C" points="124.567155 974.365602 237.763059 883.921272 161.43608 870.977901" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-229" stroke="#585B04" fill="#585B04" points="238.883672 884.245158 185.123649 987.585789 124.510276 974.527138" />
+                <polygon id="Path-191" stroke="#0A2E06" fill="#0A2E06" points="57.4129012 522.232973 24.7867438 630.950518 66.6455061 611.548899" />
+                <polygon id="Path-192" stroke="#042805" fill="#042805" points="66.0984429 612.461986 7.99107211 716.631331 24.4565808 631.787842" />
+                <polygon id="Path-194" stroke="#2A640E" fill="#2A640E" points="210.704038 653.153961 155.233248 672.700673 69.1601753 612.599235" />
+                <polygon id="Path-195" stroke="#396415" fill="#396415" points="154.271807 672.706745 25.903943 686.330144 66.874382 612.211892" />
+                <polygon id="Path-196" stroke="#304E06" fill="#304E06" points="450.398009 718.477514 443.014493 764.72715 362.297923 674.999399" />
+                <polygon id="Path-197" stroke="#365809" fill="#365809" points="361.461625 674.891219 368.577485 755.789123 443.099703 766.042234" />
+                <polygon id="Path-198" stroke="#335D09" fill="#335D09" points="362.45329 674.821642 367.814361 756.266283 287.445093 673.746007" />
+                <polygon id="Path-199" stroke="#32690E" fill="#32690E" points="209.735497 652.747626 219.359797 723.663466 288.178689 674.023922" />
+                <polygon id="Path-200" stroke="#2F5F0F" fill="#2F5F0F" points="288.64886 674.951414 218.765996 724.454548 368.149181 757.915284" />
+                <polygon id="Path-201" stroke="#337217" fill="#337217" points="210.060116 651.921909 218.891064 723.986848 153.339006 673.406584" />
+                <polygon id="Path-202" stroke="#4B801E" fill="#4B801E" points="25.2508967 687.32671 8.78751196 716.817049 124.163608 682.195227 152.67641 673.639164" />
+                <polygon id="Path-203" stroke="#417119" fill="#417119" points="219.731262 724.703904 152.557941 672.697733 10.4584494 717.324088" />
+                <polygon id="Path-204" stroke="#497110" fill="#497110" points="8.12592314 717.524919 5.5872752 793.861426 150.734482 722.450771" />
+                <polygon id="Path-205" stroke="#377714" fill="#377714" points="150.727526 722.970163 205.040474 782.383269 290.502222 741.628614 220.236752 723.557568" />
+                <polygon id="Path-206" stroke="#405D0B" fill="#405D0B" points="366.28113 756.307568 388.386972 819.643065 443.289964 767.046747" />
+                <polygon id="Path-207" stroke="#37610B" fill="#37610B" points="387.984116 820.056423 289.173092 740.401069 366.987332 757.743122" />
+                <polygon id="Path-208" stroke="#576808" fill="#576808" points="388.374709 820.960714 424.565391 836.89345 442.92682 766.469729" />
+                <polygon id="Path-209" stroke="#6D7D1A" fill="#6D7D1A" points="424.733618 837.750062 406.974325 875.223319 387.856402 820.664769" />
+                <polygon id="Path-210" stroke="#256F0E" fill="#256F0E" points="290.695442 742.220462 388.402881 821.034198 205.395297 781.62733" />
+                <polygon id="Path-211" stroke="#3E8118" fill="#3E8118" points="204.370457 781.306797 236.972393 882.032508 309.316224 805.00376" />
+                <polygon id="Path-212" stroke="#396A17" fill="#396A17" points="388.94296 821.35045 238.019231 882.063701 309.513154 804.702715" />
+                <polygon id="Path-213" stroke="#568B1C" fill="#568B1C" points="150.527852 724.047234 161.87906 869.809554 204.871342 780.559665" />
+                <polygon id="Path-214" stroke="#4F9025" fill="#4F9025" points="237.252198 883.206943 160.766444 870.478185 205.053532 781.690121" />
+                <polygon id="Path-215" stroke="#4D730E" fill="#4D730E" points="149.713051 723.895756 156.354176 805.254599 66.7302149 764.012019" />
+                <polygon id="Path-216" stroke="#4D741B" fill="#4D741B" points="161.089649 870.541963 66.292147 764.424775 156.230824 804.348499" />
+                <polygon id="Path-217" stroke="#5E691A" fill="#5E691A" points="407.906484 875.628669 238.140597 882.525142 388.329542 821.819784" />
+                <polygon id="Path-218" stroke="#5C7D2A" fill="#5C7D2A" points="159.884453 870.856716 5.74185035 794.751268 66.3727018 764.264674" />
+                <polygon id="Path-219" stroke="#7E8712" fill="#7E8712" points="4.44539427 794.324802 0.524410473 840.372425 75.0861559 829.721081" />
+                <polygon id="Path-220" stroke="#8A940F" fill="#8A940F" points="77.6906524 830.214164 62.1915472 898.408009 0.942772445 840.951992" />
+                <polygon id="Path-221" stroke="#737C07" fill="#737C07" points="62.5778465 898.164955 162.289281 870.877251 78.0464544 830.315822" />
+                <polygon id="Path-222" stroke="#816F0E" fill="#816F0E" points="0.00513037798 841.105845 4.46225228 892.550355 61.6221876 897.966365" />
+                <polygon id="Path-223" stroke="#ACA716" fill="#ACA716" points="4.27288015 893.310714 15.2184699 921.557653 61.6297677 898.322631" />
+                <polygon id="Path-224" stroke="#87900F" fill="#87900F" points="64.6083332 897.673846 120.509505 972.848459 15.2737896 922.536159" />
+                <polygon id="Path-225" stroke="#988C17" fill="#988C17" points="161.494741 870.663463 124.187059 976.511848 62.5996098 898.565275" />
+                <polygon id="Path-226" stroke="#897D1A" fill="#897D1A" points="89.4578733 957.757581 28.9662684 957.757581 15.0484725 922.347694" />
+                <polygon id="Path-227" stroke="#45670A" fill="#45670A" points="71.4166738 958.179197 59.4914134 1015.73431 47.0079107 979.782511 29.5919025 958.179197" />
+                <polygon id="Path-228" stroke="#6C7B1C" fill="#6C7B1C" points="124.567155 974.365602 237.763059 883.921272 161.43608 870.977901" />
+                <polygon id="Path-229" stroke="#585B04" fill="#585B04" points="238.883672 884.245158 185.123649 987.585789 124.510276 974.527138" />
                 <polyline id="Path-230" stroke="#6D7C10" fill="#6D7C10" points="239.915358 885.504781 256.567235 986.580922 225.388479 997.408396 184.715083 987.613991 239.915358 881.866805" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-231" stroke="#6C730B" fill="#6C730B" points="408.350365 875.491125 386.202751 913.576323 238.802806 882.872424" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-232" stroke="#8C921D" fill="#8C921D" points="385.484477 914.390179 348.56736 945.732851 240.955105 883.17502" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-233" stroke="#8F9F2C" fill="#8F9F2C" points="348.592055 945.895519 292.63911 968.485557 238.277242 882.454418" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-234" stroke="#586208" fill="#586208" points="237.508242 882.412842 292.457842 968.718662 256.951737 988.219035" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-49" fill="#D4B4B4" points="632.909171 238.593311 665.418069 215.823683 632.909171 193.527945" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-49" fill="#BCA5A5" transform="translate(617.254449, 216.060628) scale(-1, 1) translate(-617.254449, -216.060628) " points="601 238.593311 633.508898 215.823683 601 193.527945" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-50" fill="#F1E8E8" points="671.037086 245.069332 632.948202 238.468006 665.166399 215.65497 682.383523 234.714818" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-51" fill="#FFF4F4" points="672.2514 245.234191 650.275825 246.305238 642.169032 255.74783 602.296571 247.844115 601.265806 215.995391 633.337778 238.343658" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-52" fill="#D7C1C1" points="536.066488 269.791488 602.380492 248.282101 601.534279 215.761029" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-53" fill="#A09D9D" points="665.243932 215.485284 682.008824 235.167046 704.358459 249.537169" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-54" fill="#BFB2B2" points="704.093579 249.342603 695.494014 223.697342 665.30227 216.067946" />
+                <polygon id="Path-231" stroke="#6C730B" fill="#6C730B" points="408.350365 875.491125 386.202751 913.576323 238.802806 882.872424" />
+                <polygon id="Path-232" stroke="#8C921D" fill="#8C921D" points="385.484477 914.390179 348.56736 945.732851 240.955105 883.17502" />
+                <polygon id="Path-233" stroke="#8F9F2C" fill="#8F9F2C" points="348.592055 945.895519 292.63911 968.485557 238.277242 882.454418" />
+                <polygon id="Path-234" stroke="#586208" fill="#586208" points="237.508242 882.412842 292.457842 968.718662 256.951737 988.219035" />
+                <polygon id="Path-49" fill="#D4B4B4" points="632.909171 238.593311 665.418069 215.823683 632.909171 193.527945" />
+                <polygon id="Path-49" fill="#BCA5A5" transform="translate(617.254449, 216.060628) scale(-1, 1) translate(-617.254449, -216.060628) " points="601 238.593311 633.508898 215.823683 601 193.527945" />
+                <polygon id="Path-50" fill="#F1E8E8" points="671.037086 245.069332 632.948202 238.468006 665.166399 215.65497 682.383523 234.714818" />
+                <polygon id="Path-51" fill="#FFF4F4" points="672.2514 245.234191 650.275825 246.305238 642.169032 255.74783 602.296571 247.844115 601.265806 215.995391 633.337778 238.343658" />
+                <polygon id="Path-52" fill="#D7C1C1" points="536.066488 269.791488 602.380492 248.282101 601.534279 215.761029" />
+                <polygon id="Path-53" fill="#A09D9D" points="665.243932 215.485284 682.008824 235.167046 704.358459 249.537169" />
+                <polygon id="Path-54" fill="#BFB2B2" points="704.093579 249.342603 695.494014 223.697342 665.30227 216.067946" />
               </g>
               <g onMouseEnter={e => this.handleMouse(e)} id="left-wing" transform="translate(2.000000, 443.000000)">
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-235" stroke="#6E7F19" fill="#6E7F19" points="85.0659907 0.976131771 98.7575659 68.117609 110.438905 0.976131771" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-236" stroke="#97A02B" fill="#97A02B" points="129.67862 10.3797369 99.4861954 69.4937648 111.259211 1.2269134" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-237" stroke="#7D8C27" fill="#7D8C27" points="84.3015547 1.48887096 58.5368731 32.0633724 98.7335225 71.6503616" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-238" stroke="#789030" fill="#789030" points="129.889581 11.4755128 138.627021 30.544803 100.525745 69.5143654" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-239" stroke="#5E8127" fill="#5E8127" points="138.567306 31.5246377 140.52654 49.4079271 101.026934 70.1745002" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-240" stroke="#154D02" fill="#154D02" points="140.268555 50.0921117 140.268555 77.671846 98.8533776 72.1799026" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-241" stroke="#0C3807" fill="#0C3807" points="98.7752731 72.3986524 140.818155 78.2267478 125.845398 128.62199" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-242" stroke="#133B06" fill="#133B06" points="115.247125 106.980626 110.946323 177.02329 125.988213 129.879119" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-243" stroke="#657F28" fill="#657F28" points="98.2715653 72.3173457 57.6142162 32.3438324 34.274458 82.9333455" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-244" stroke="#32611D" fill="#32611D" points="115.259371 107.812837 66.1031549 78.5915418 98.8704731 72.4860987" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-245" stroke="#52790A" fill="#52790A" points="63.5143421 79.0627767 24.0810709 127.540704 34.2307032 83.8728702" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-246" stroke="#3C6217" fill="#3C6217" points="116.002992 109.054911 73.2445899 123.174913 65.2168817 78.6022088" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-247" stroke="#466F02" fill="#466F02" points="72.4312344 123.760035 64.6280504 78.4962351 23.9544253 129.248383" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-248" stroke="#274C17" fill="#274C17" points="73.1414959 123.85595 115.892427 109.85292 110.38635 177.955839 88.0410831 145.572017" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-250" stroke="#264600" fill="#264600" points="23.3619334 130.14443 72.637566 124.120151 11.2305168 177.632537" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-251" stroke="#2C4906" fill="#2C4906" points="110.201858 179.124956 40.8373456 152.882871 73.3394473 123.936846" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-252" stroke="#3E5602" fill="#3E5602" points="11.0003877 178.609905 40.766666 153.116236 45.7965031 208.190241" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-253" stroke="#334A07" fill="#334A07" points="110.443155 179.818934 41.4367137 152.364426 46.3045308 209.409219" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-254" stroke="#002500" fill="#002500" points="109.566858 181.356328 46.8231995 209.942083 91.0686662 273.653055" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-255" stroke="#2C4C03" fill="#2C4C03" points="3.54657136 207.151806 47.9835549 211.037198 10.9706421 178.234672" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-193" stroke="#5C4D12" fill="#5C4D12" points="34.6032772 433.09915 66.3829608 412.462187 63.238754 466.101096" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-257" stroke="#394F11" fill="#394F11" points="66.6401521 410.719371 68.3141324 354.63022 7.85993708 364.632912" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-258" stroke="#466C2F" fill="#466C2F" points="67.8419138 353.520454 89.9231349 274.4431 49.0494214 302.607195" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-259" stroke="#095E1B" fill="#095E1B" points="91.4136853 274.14567 46.8416392 210.833819 48.8811609 301.995338" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-260" stroke="#005661" fill="#005661" points="46.3912449 212.727175 8.71220792 362.840606 49.0307258 302.425337" />
+                <polygon id="Path-235" stroke="#6E7F19" fill="#6E7F19" points="85.0659907 0.976131771 98.7575659 68.117609 110.438905 0.976131771" />
+                <polygon id="Path-236" stroke="#97A02B" fill="#97A02B" points="129.67862 10.3797369 99.4861954 69.4937648 111.259211 1.2269134" />
+                <polygon id="Path-237" stroke="#7D8C27" fill="#7D8C27" points="84.3015547 1.48887096 58.5368731 32.0633724 98.7335225 71.6503616" />
+                <polygon id="Path-238" stroke="#789030" fill="#789030" points="129.889581 11.4755128 138.627021 30.544803 100.525745 69.5143654" />
+                <polygon id="Path-239" stroke="#5E8127" fill="#5E8127" points="138.567306 31.5246377 140.52654 49.4079271 101.026934 70.1745002" />
+                <polygon id="Path-240" stroke="#154D02" fill="#154D02" points="140.268555 50.0921117 140.268555 77.671846 98.8533776 72.1799026" />
+                <polygon id="Path-241" stroke="#0C3807" fill="#0C3807" points="98.7752731 72.3986524 140.818155 78.2267478 125.845398 128.62199" />
+                <polygon id="Path-242" stroke="#133B06" fill="#133B06" points="115.247125 106.980626 110.946323 177.02329 125.988213 129.879119" />
+                <polygon id="Path-243" stroke="#657F28" fill="#657F28" points="98.2715653 72.3173457 57.6142162 32.3438324 34.274458 82.9333455" />
+                <polygon id="Path-244" stroke="#32611D" fill="#32611D" points="115.259371 107.812837 66.1031549 78.5915418 98.8704731 72.4860987" />
+                <polygon id="Path-245" stroke="#52790A" fill="#52790A" points="63.5143421 79.0627767 24.0810709 127.540704 34.2307032 83.8728702" />
+                <polygon id="Path-246" stroke="#3C6217" fill="#3C6217" points="116.002992 109.054911 73.2445899 123.174913 65.2168817 78.6022088" />
+                <polygon id="Path-247" stroke="#466F02" fill="#466F02" points="72.4312344 123.760035 64.6280504 78.4962351 23.9544253 129.248383" />
+                <polygon id="Path-248" stroke="#274C17" fill="#274C17" points="73.1414959 123.85595 115.892427 109.85292 110.38635 177.955839 88.0410831 145.572017" />
+                <polygon id="Path-250" stroke="#264600" fill="#264600" points="23.3619334 130.14443 72.637566 124.120151 11.2305168 177.632537" />
+                <polygon id="Path-251" stroke="#2C4906" fill="#2C4906" points="110.201858 179.124956 40.8373456 152.882871 73.3394473 123.936846" />
+                <polygon id="Path-252" stroke="#3E5602" fill="#3E5602" points="11.0003877 178.609905 40.766666 153.116236 45.7965031 208.190241" />
+                <polygon id="Path-253" stroke="#334A07" fill="#334A07" points="110.443155 179.818934 41.4367137 152.364426 46.3045308 209.409219" />
+                <polygon id="Path-254" stroke="#002500" fill="#002500" points="109.566858 181.356328 46.8231995 209.942083 91.0686662 273.653055" />
+                <polygon id="Path-255" stroke="#2C4C03" fill="#2C4C03" points="3.54657136 207.151806 47.9835549 211.037198 10.9706421 178.234672" />
+                <polygon id="Path-193" stroke="#5C4D12" fill="#5C4D12" points="34.6032772 433.09915 66.3829608 412.462187 63.238754 466.101096" />
+                <polygon id="Path-257" stroke="#394F11" fill="#394F11" points="66.6401521 410.719371 68.3141324 354.63022 7.85993708 364.632912" />
+                <polygon id="Path-258" stroke="#466C2F" fill="#466C2F" points="67.8419138 353.520454 89.9231349 274.4431 49.0494214 302.607195" />
+                <polygon id="Path-259" stroke="#095E1B" fill="#095E1B" points="91.4136853 274.14567 46.8416392 210.833819 48.8811609 301.995338" />
+                <polygon id="Path-260" stroke="#005661" fill="#005661" points="46.3912449 212.727175 8.71220792 362.840606 49.0307258 302.425337" />
                 <path d="M45.8402945,210.954233 L0.241968666,272.870969 C0.221099296,273.300331 0.221099296,273.634567 0.241968666,273.873678 C0.262838035,274.112789 2.87569188,303.715331 8.08053022,362.681305 L45.8402945,210.954233 Z" id="Path-262" stroke="#7C8700" fill="#7C8700" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-263" stroke="#4E5B01" fill="#4E5B01" points="44.4774937 211.219629 0.0974371229 271.740338 3.67649611 207.626154" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-261" stroke="#105206" fill="#105206" points="68.02887 355.004206 49.0709484 303.333455 8.24369195 364.923079" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-256" stroke="#4B631E" fill="#4C6719" points="66.6318556 411.42236 7.84795069 364.773324 34.9834169 433.748127" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-249" stroke="#000000" fill="#000000" points="98.1854937 480.021392 86.467246 448.703724 82.8180995 398.649765 87.7656978 350.397206 90.1346718 275.206632 67.5182182 354.999489 67.5182182 407.489665 63.2462094 466.079561 80.7158516 466.079561" />
+                <polygon id="Path-263" stroke="#4E5B01" fill="#4E5B01" points="44.4774937 211.219629 0.0974371229 271.740338 3.67649611 207.626154" />
+                <polygon id="Path-261" stroke="#105206" fill="#105206" points="68.02887 355.004206 49.0709484 303.333455 8.24369195 364.923079" />
+                <polygon id="Path-256" stroke="#4B631E" fill="#4C6719" points="66.6318556 411.42236 7.84795069 364.773324 34.9834169 433.748127" />
+                <polygon id="Path-249" stroke="#000000" fill="#000000" points="98.1854937 480.021392 86.467246 448.703724 82.8180995 398.649765 87.7656978 350.397206 90.1346718 275.206632 67.5182182 354.999489 67.5182182 407.489665 63.2462094 466.079561 80.7158516 466.079561" />
               </g>
               <g onMouseEnter={e => this.handleMouse(e)} onMouseLeave={this.handleMouseExit} id="right-wing" transform="translate(493.000000, 453.000000)">
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-266" stroke="#0C3000" fill="#0C3000" points="79.0936275 177.341023 75.8952541 247.182442 65.4435 356.693788 53.7029869 194.046958" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-267" stroke="#0D602A" fill="#0D602A" points="92.4138472 292.765152 75.2765253 246.701703 65.9565819 358.026034" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-268" stroke="#014A4E" fill="#014A4E" points="75.0852141 245.210601 110.165076 172.49642 108.880447 210.676919 92.5826978 291.228061" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-269" stroke="#002F0F" fill="#002F0F" points="75.3681628 242.462403 110.111483 172.206059 79.7937302 176.457198" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-270" stroke="#2C4100" fill="#2C4100" points="80.1782903 175.658376 102.351462 72.2476689 113.080063 130.847747 110.666401 171.407893" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-271" stroke="#374627" fill="#374627" points="102.063823 71.1815307 60.2349463 72.617764 78.4997062 0.0794551219" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-272" stroke="#192F01" fill="#192F01" points="102.13417 71.7958889 80.3908926 176.658858 61.0847259 71.7958889" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-265" stroke="#000000" fill="#000000" points="45.7360834 200.817437 54.5372546 194.706291 65.6075732 361.64721 21.7431315 412.997805 0.296555108 421.767129 17.3995587 383.790817 35.7916736 312.786719 41.622233 264.828085" />
-                <polygon onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="Path-264" stroke="#000000" fill="#000000" points="60.9970205 70.9603854 80.0163035 176.341507 45.6184991 201.370163 42.6500957 153.047819" />
+                <polygon id="Path-266" stroke="#0C3000" fill="#0C3000" points="79.0936275 177.341023 75.8952541 247.182442 65.4435 356.693788 53.7029869 194.046958" />
+                <polygon id="Path-267" stroke="#0D602A" fill="#0D602A" points="92.4138472 292.765152 75.2765253 246.701703 65.9565819 358.026034" />
+                <polygon id="Path-268" stroke="#014A4E" fill="#014A4E" points="75.0852141 245.210601 110.165076 172.49642 108.880447 210.676919 92.5826978 291.228061" />
+                <polygon id="Path-269" stroke="#002F0F" fill="#002F0F" points="75.3681628 242.462403 110.111483 172.206059 79.7937302 176.457198" />
+                <polygon id="Path-270" stroke="#2C4100" fill="#2C4100" points="80.1782903 175.658376 102.351462 72.2476689 113.080063 130.847747 110.666401 171.407893" />
+                <polygon id="Path-271" stroke="#374627" fill="#374627" points="102.063823 71.1815307 60.2349463 72.617764 78.4997062 0.0794551219" />
+                <polygon id="Path-272" stroke="#192F01" fill="#192F01" points="102.13417 71.7958889 80.3908926 176.658858 61.0847259 71.7958889" />
+                <polygon id="Path-265" stroke="#000000" fill="#000000" points="45.7360834 200.817437 54.5372546 194.706291 65.6075732 361.64721 21.7431315 412.997805 0.296555108 421.767129 17.3995587 383.790817 35.7916736 312.786719 41.622233 264.828085" />
+                <polygon id="Path-264" stroke="#000000" fill="#000000" points="60.9970205 70.9603854 80.0163035 176.341507 45.6184991 201.370163 42.6500957 153.047819" />
               </g>
               <g id="feet" transform="translate(145.000000, 946.000000)">
                 <polygon id="Path-273" stroke="#000000" fill="#000000" points="89.5302617 60.2211228 97.6237753 73.6075372 105.122908 134.844174 72.608395 82.6431529" />
