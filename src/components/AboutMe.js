@@ -10,7 +10,11 @@ class AboutMe extends React.Component {
 		console.log('cliked')
 	}
 
+
 	render() {
+		const linkedin = 'https://www.linkedin.com/in/joscelynjames/';
+		const gitHub = 'https://www.github.com/JoscelynJames';
+
 		return (
 			<div className="aboutme-container">
 
@@ -24,10 +28,22 @@ class AboutMe extends React.Component {
 					<div className="about-me">
 						<ParagraphAboutMe />
 
-						<div onClick={this.handleClick} className="download-bttn">
-							<a href={resume} download="resume.pdf">
-								<ButtonSVG text="Resume" />
-							</a>
+						<div className="links">
+							<div onClick={this.handleClick} className="download-bttn">
+								<a href={resume} download="joscelyn-james-resume.pdf">
+									<ButtonSVG text="Resume" />
+								</a>
+							</div>
+							<div>
+								<a href={linkedin}>
+									<ButtonSVG  text="Linkedin"/>
+								</a>
+							</div>
+							<div>
+								<a href={gitHub}>
+									<ButtonSVG text="GitHub"/>
+								</a>
+							</div>
 						</div>
 
 					</div>

@@ -98,9 +98,18 @@ a {
   }
 }
 
-.download-bttn a svg {
-  height: 40px;
+.links {
+  display: flex;
+  justify-content: center;
+}
 
+.links div a svg {
+  height: 40px;
+  width: 80px;
+}
+
+.links div {
+  margin: 3%;
 }
 
 .projects {
