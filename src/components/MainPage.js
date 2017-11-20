@@ -1,6 +1,7 @@
 import React from 'react';
 import Anime from 'react-anime';
 import Miles from '../assets/Miles';
+import ColorBlock from './ColorBlock';
 
 class MainPage extends React.Component {
 
@@ -18,14 +19,6 @@ class MainPage extends React.Component {
 		)
 
 	}
-}
-
-function ColorBlock() {
-	return(
-		<div>
-			<div className="color-block"></div>
-		</div>
-	)
 }
 
 export default MainPage

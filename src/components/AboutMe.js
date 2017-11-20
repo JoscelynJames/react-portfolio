@@ -1,23 +1,34 @@
 import React from 'react';
+import anime from 'animejs';
 
-import ButtonSVG from './ButtonSVG'
+import ButtonSVG from './ButtonSVG';
+import ColorBlock from './ColorBlock';
 
 import me from '../assets/Joscelyn-sm.jpg';
 import resume from '../assets/resume.pdf';
 
 class AboutMe extends React.Component {
-	handleClick() {
-		console.log('cliked')
+	handleMouseEnter(e) {
+		console.log(e.target)
+		anime({
+			targets: `line`,
+			strokeDashoffset: [anime.setDashoffset, 0],
+			easing: 'easeInOutSine',
+			duration: 1500,
+			delay: function (el, i) { return i * 250 },
+			direction: 'alternate',
+			loop: true
+		})
 	}
-
 
 	render() {
 		const linkedin = 'https://www.linkedin.com/in/joscelynjames/';
 		const gitHub = 'https://www.github.com/JoscelynJames';
 
 		return (
+			<div>
+			{/* <ColorBlock /> */}
 			<div className="aboutme-container">
-
 				<div className="main-name">
 					<h1>Joscelyn James</h1>
 				</div>
@@ -29,9 +40,9 @@ class AboutMe extends React.Component {
 						<ParagraphAboutMe />
 
 						<div className="links">
-							<div onClick={this.handleClick} className="download-bttn">
+							<div className="download-bttn">
 								<a href={resume} download="joscelyn-james-resume.pdf">
-									<ButtonSVG text="Resume" />
+									<ButtonSVG onMouseEnter={(e) => this.handleMouseEnter(e)} text="Resume" />
 								</a>
 							</div>
 							<div>
@@ -51,6 +62,7 @@ class AboutMe extends React.Component {
 				</div>
 
 			</div>
+			</div>
 		)
 	}
 }
@@ -67,7 +79,7 @@ function ParagraphAboutMe() {
 	return (<div className="aboutme-bio">
 		<h5>Collaborate. Develop. Repeat.</h5>
 		<p>
-			I am a full stack developer graduating from Galvanize web development immersive. During my time at Galvanize, I learned core values to prep me for developing in the wild. Im a NERP (Node, Express, React, PostgreSQl), but my curiosity leads me to new languages and technologies. I am always looking for oporutnites to colaberate.
+			I am a full stack developer graduating from Galvanize web development immersive. During my time at Galvanize, I learned core values to prep me for developing in the wild. Im a NERP (Node, Express, React, PostgreSQl), but my curiosity leads me to new languages and technologies. I am always looking for opportunities to collaborate
 	</p>
 	</div>
 	)
