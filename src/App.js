@@ -19,8 +19,10 @@ class App extends Component {
           </Switch>
         </BrowserRouter> */}
       <MainPage />
-      <Projects />
-      <AboutMe />
+      <div className="proj-about">
+        <Projects />
+        <AboutMe />
+      </div>
       {/* <Contact /> */}
     </div>;
   }

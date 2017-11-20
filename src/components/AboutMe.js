@@ -2,14 +2,14 @@ import React from 'react';
 import anime from 'animejs';
 
 import ButtonSVG from './ButtonSVG';
-import ColorBlock from './ColorBlock';
+// import ColorBlock from './ColorBlock';
 
 import me from '../assets/Joscelyn-sm.jpg';
 import resume from '../assets/resume.pdf';
 
 class AboutMe extends React.Component {
 	handleMouseEnter(e) {
-		console.log(e.target)
+		// console.log(e.target)
 		anime({
 			targets: `line`,
 			strokeDashoffset: [anime.setDashoffset, 0],

@@ -1,3 +1,7 @@
+body {
+  display: flex
+}
+
 .nav-container {
   width: auto;
   display: flex;
@@ -40,7 +44,9 @@ a {
 
 .main-name {
   font-size: 2rem;
-  color: #F9BA00; } 
+  color: #F9BA00;
+  text-align: center;
+} 
 
 .main-job {
   padding-right: 2%;
@@ -115,7 +121,7 @@ a {
 .projects {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100vw;
 }
@@ -125,10 +131,43 @@ a {
   .projects {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 100%; 
   }
+}
+
+@media (min-width: 1079px){
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: baseline;
+    align-items: center;
+    /* height: 100%;  */
+    width: 50vw;
+  }
+
+  .aboutme-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 50vw;
+  margin: 0;
+}
+
+.proj-about {
+  display: flex;
+  width: 100%
+}
+
+.bio-pic {
+  display: flex;
+  align-items: center;
+  flex-flow: column-reverse;
+  margin: 5rem
+}
+
 }
 
 .project-container {
@@ -141,7 +180,7 @@ a {
 }
 
 .project-img {
-  height: 250px;
+  height: auto;
   width: 250px;
   border-radius: 5px;
 }
