@@ -37,6 +37,8 @@ class Projects extends React.Component {
 		]
 
 		return (
+			<div>
+			<div className="project-heading"><h1>Projects</h1></div>
 			<div className="projects">
 			{projects.map((project, i) => {
 				return (
@@ -57,6 +59,7 @@ class Projects extends React.Component {
 					</div>
 				)
 			})}
+			</div>
 			</div>
 		)
 	}

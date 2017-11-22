@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+/* font-family: 'Shadows Into Light', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+/* font-family: 'Amatic SC', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+/* font-family: 'Sacramento', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+/* font-family: 'Shadows Into Light Two', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* font-family: 'Pacifico', cursive; */
+
+
 body {
-  display: flex
+  display: flex;
+  font-family: 'Shadows Into Light Two', cursive;
+  /* font-family: 'Amatic SC', cursive; */
+  line-height: 26px
 }
 
 .nav-container {
@@ -23,9 +38,8 @@ a {
   flex-wrap: wrap; }
 
 .main-container {
-  font-family: proxima-soft, sans-serif;
-  font-style: italic;
-  font-weight: 200;
+  /* font-style: italic;
+  font-weight: 200; */
   display: flex;
   /* flex-flow: column wrap; */
   padding-right: 2%; 
@@ -42,13 +56,15 @@ a {
   flex-direction: column;
   justify-content: center; } */
 
-.main-name {
-  font-size: 2rem;
+.about-name {
+  font-family: 'Pacifico', cursive;
   color: #F9BA00;
   text-align: center;
+  font-size: 25px;
+  padding-bottom: 20px;
 } 
 
-.main-job {
+.about-job {
   padding-right: 2%;
 } 
 
@@ -91,16 +107,24 @@ a {
 .bio-pic {
   display: flex;
   align-items: center;
-  margin: 5rem
+  margin: 5rem;
 }
 
-@media (max-width: 750px) { 
+@media (max-width: 760px) { 
 
   .bio-pic {
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
     margin: 5rem
+  }
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: baseline;
+    align-items: center;
+    height: 112vw;
   }
 }
 
@@ -118,10 +142,90 @@ a {
   margin: 3%;
 }
 
+/* .projects {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: baseline;
+  align-items: center;
+  height: 112vw;
+  font-size: 30px
+}
+
+@media (max-width: 930px) { 
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: baseline;
+    align-items: center;
+    height: 150vw; 
+  }
+
+  .project-container {
+  margin: 1%;
+  margin-bottom: 5%;
+  height: auto;
+  box-shadow: 5px 3px 3px  rgb(173, 172, 172);
+  border-radius: 15px;
+}
+}
+
+
+@media (min-width: 1045px){
+
+  .projects {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: baseline;
+    align-items: center;
+    width: 50vw;
+    font-size: 30px;
+  }
+
+  .aboutme-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 50vw;
+}
+
+.proj-about {
+  display: flex;
+  width: 100vw
+}
+
+.bio-pic {
+  display: flex;
+  align-items: center;
+  flex-flow: column-reverse;
+}
+
+}
+
+.project-container {
+  margin: 1%;
+  margin-bottom: 5%;
+  height: auto;
+  box-shadow: 5px 3px 3px  rgb(173, 172, 172);
+  border-radius: 15px;
+  font-size: 22px;
+}
+
+.project-img {
+  height: auto;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.project-description > p{
+  text-align: center;
+  width: 250px;
+} */
+
 .projects {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: baseline;
   align-items: center;
   height: 100vw;
 }
@@ -177,6 +281,7 @@ a {
   box-shadow: 5px 3px 3px  rgb(173, 172, 172);
   overflow: scroll;
   border-radius: 15px;
+
 }
 
 .project-img {
@@ -188,4 +293,24 @@ a {
 .project-description > p{
   text-align: center;
   width: 250px;
+}
+
+.project-heading {
+  font-family: 'Pacifico', cursive;
+  color: #F9BA00;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 27px;
+  padding-bottom: 30px;
+}
+
+.main-name-container {
+  position: absolute;
+  margin-left: 35%;
+}
+
+.main-name {
+  font-family: 'Pacifico', cursive;
+  color: #F9BA00;
+  font-size: 40px;
 }

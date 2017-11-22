@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+/* font-family: 'Shadows Into Light Two', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+/* font-family: 'Pacifico', cursive; */
+
+a {
+	font-style: none;
+}
+
+/* Styles for Grid and Card components */
+
+.grid-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 361vh;
+}
+
+.card-container {
+	height: auto;
+	width: 150px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 150px;
+}
+
+@media (min-width: 360px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 343vh;
+}
+
+.card-container {
+	height: auto;
+	width: 170px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 170px;
+}
+}
+
+@media (min-width: 374px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 314vh;
+}
+
+.card-container {
+	height: auto;
+	width: 176px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 176px;
+}
+}
+
+@media (min-width: 411px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 306vh;
+}
+
+.card-container {
+	height: auto;
+	width: 197px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 197px;
+}
+}
+
+@media (min-width: 475px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 295vh;
+}
+
+.card-container {
+	height: auto;
+	width: 234px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 234px;
+}
+}
+
+@media (min-width: 708px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 165vh;
+}
+
+.card-container {
+	height: auto;
+	width: 234px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 234px;
+}
+}
+
+@media (min-width: 840px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 214vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-container {
+	height: auto;
+	width: 234px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 234px;
+}
+}
+
+@media (min-width: 1023px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 128vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-container {
+	height: auto;
+	width: 255px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 255px;
+}
+}
+
+@media (min-width: 1025px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 228vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-container {
+	height: auto;
+	width: 255px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 255px;
+}
+}
+
+@media (min-width: 1210px) {
+	.grid-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 163vh;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-container {
+	height: auto;
+	width: 244px;
+	overflow: hidden;
+  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
+	border-radius: 15px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 5px;
+}
+
+.card-img {
+  height: auto;
+  width: 244px;
+}
+}
+
+/* End of Grid and Card stytles */
+
+/* Styles for NavBar component */
+
+
+/* End of styles for NavBar component */
