@@ -3,6 +3,7 @@ import Anime from 'react-anime';
 import anime from 'animejs';
 
 class Miles extends React.Component {
+
   handleMouse(e) {
     // console.log(typeof e.target.getAttribute("points"));
     // let points = e.target.getAttribute('points').split(' ');
@@ -31,7 +32,7 @@ class Miles extends React.Component {
   }
 
   render() {
-    return <svg onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="miles" width="405px" height="1374px" viewBox="0 0 1114 1374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...this.props}>
+    return <svg onMouseLeave={this.handleMouseExit} onMouseEnter={e => this.handleMouse(e)} id="miles" width="200px" height="344px" viewBox="0 0 1114 1374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...this.props}>
         <defs />
         <g id="Page-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
           <g id="Miles" transform="translate(1.000000, 1.000000)">
