@@ -1,48 +1,33 @@
 import React from "react";
 
-import DetailCard from './DetailCard';
-import resume from "../assets/resume.pdf";
-const linkedin = "https://www.linkedin.com/in/joscelynjames/";
-const gitHub = "https://www.github.com/JoscelynJames";
-
 class Card extends React.Component {
-
-  decideWhatToRender(title) {
-    switch (title) {
-      case "Resume?":
-        return (
-          <a href={resume} download="joscelyn-james-resume.pdf">
-            {title}
-          </a>
-        );
-        break;
-      case "GitHub":
-        return <a href={gitHub}>{title}</a>;
-        break;
-      case "LinkedIn":
-        return <a href={linkedin}>{title}</a>;
-        break;
-      default:
-        return <h4>{title}</h4>;
-    }
-  }
+	
+	handleClick(e) {
+		// console.log('clicky', e.target)
+	}
 
   render() {
-    return (
-      <div onClick={this.props.onClick} className="card-container">
-        <div className="card-img-container">
-          <img className="card-img" src={this.props.img} />
-        </div>
+		return <div>
+        <div className="card-container">
+          <div className="card-img-container">
+            {this.props.deployedSite 
+            ? <a href={this.props.deployedSite}> <img className="card-img" src={this.props.img} alt="Oops. Something went wrong..." /></a>
+            : <img className="card-img" src={this.props.img} alt="Oops. Something went wrong..."/>
+            }
 
-        <div className="card-title">
-          {this.decideWhatToRender(this.props.title)}
-        </div>
+          </div>
 
-        <div className="gird-p">
-          <p>{this.props.p}</p>
+          <div className="card-title">
+            <a href={this.props.url}>
+              <h4>{this.props.title}</h4>
+            </a>
+          </div>
+
+          <div className="grid-p">
+            <p>{this.props.p}</p>
+          </div>
         </div>
-      </div>
-    );
+      </div>;	
   }
 }
 

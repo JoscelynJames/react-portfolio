@@ -7,25 +7,30 @@ a {
 	font-style: none;
 }
 
+img {
+  border-radius: 5px;
+}
+
 /* Styles for Grid and Card components */
 
 .grid-container {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 361vh;
+  /* margin-top: 50px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 430vh;
 }
 
 .card-container {
 	height: auto;
 	width: 150px;
 	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
+  box-shadow: 2px 2px 2px  rgb(220, 220, 220);
+  border: 1px solid gainsboro;
+	border-radius: 9px;
 	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .card-img {
@@ -33,242 +38,232 @@ a {
   width: 150px;
 }
 
+.card-title, .grid-p {
+  margin: 10px;
+}
+
 @media (min-width: 360px) {
 	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 343vh;
-}
+    height: 418vh;
+  }
 
-.card-container {
-	height: auto;
-	width: 170px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 170px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 170px;
-}
+  .card-img {
+    width: 170px;
+  }
 }
 
 @media (min-width: 374px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 314vh;
-}
+    .grid-container {
+      height: 400vh;
+  }
 
-.card-container {
-	height: auto;
-	width: 176px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 176px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 176px;
-}
+  .card-img {
+    width: 176px;
+  }
 }
 
 @media (min-width: 411px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 306vh;
-}
+    .grid-container {
+      height: 400vh;
+  }
 
-.card-container {
-	height: auto;
-	width: 197px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 197px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 197px;
-}
+  .card-img {
+    width: 197px;
+  }
 }
 
 @media (min-width: 475px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 295vh;
-}
+    .grid-container {
+      height: 300vh;
+  }
 
-.card-container {
-	height: auto;
-	width: 234px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 234px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 234px;
-}
+  .card-img {
+    width: 234px;
+  }
 }
 
 @media (min-width: 708px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 165vh;
+    .grid-container {
+      height: 165vh;
+  }
+
+  .card-container {
+    width: 234px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
+
+  .card-img {
+    width: 234px;
+  }
 }
 
-.card-container {
-	height: auto;
-	width: 234px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+@media (min-width: 730px) {
+    .grid-container {
+      height: 209vh;
+  }
 
-.card-img {
-  height: auto;
-  width: 234px;
-}
+  .card-container {
+    width: 234px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
+
+  .card-img {
+    width: 234px;
+  }
 }
 
 @media (min-width: 840px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 214vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+    .grid-container {
+      height: 214vh;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
 
-.card-container {
-	height: auto;
-	width: 234px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 234px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 234px;
-}
+  .card-img {
+    width: 234px;
+  }
 }
 
 @media (min-width: 1023px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 128vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+    .grid-container {
+      height: 140vh;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
 
-.card-container {
-	height: auto;
-	width: 255px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 255px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 255px;
-}
+  .card-img {
+    width: 255px;
+  }
 }
 
 @media (min-width: 1025px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 228vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+    .grid-container {
+      height: 229vh;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
 
-.card-container {
-	height: auto;
-	width: 255px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 255px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 255px;
-}
+  .card-img {
+    width: 255px;
+  }
 }
 
 @media (min-width: 1210px) {
-	.grid-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 163vh;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+    .grid-container {
+      height: 206vh;
+      padding-left: 10%;
+      padding-right: 10%;
+  }
 
-.card-container {
-	height: auto;
-	width: 244px;
-	overflow: hidden;
-  box-shadow: 5px 3px 3px  rgb(220, 220, 220);
-	border-radius: 15px;
-	font-family: 'Shadows Into Light Two', cursive;
-	margin-top: 5px;
-}
+  .card-container {
+    width: 244px;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
 
-.card-img {
-  height: auto;
-  width: 244px;
-}
+  .card-img {
+    width: 244px;
+  }
 }
 
 /* End of Grid and Card stytles */
 
 /* Styles for NavBar component */
 
+.nav-container {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  background-color: #F9BA00;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
 
+.nav-name {
+  align-self: center;
+  font-size: 30px;
+}
+
+.nav-links {
+  flex-direction: column;
+  display: flex;
+}
+
+@media (min-width: 320px) {
+  .nav-container {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-name {
+    font-size: 40px
+  }
+
+  .nav-links{
+    flex-direction: row;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    font-size: 25px
+  }
+}
+@media (min-width: 1000px) {
+    .nav-container {
+    font-size: 1.3rem;
+  }
+  .nav-name {
+    font-size: 45px
+  }
+
+  .nav-links{
+    flex-direction: row;
+  }
+
+  .nav-links a {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 27px
+  }
+}
 /* End of styles for NavBar component */
+
+/*Styles for DetailedCard component */
+
+/*End of styles for DetailedCard component */
+
